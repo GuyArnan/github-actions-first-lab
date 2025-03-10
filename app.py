@@ -1,5 +1,4 @@
 import datetime
-import requests
 
 def main():
     print(f"Hello from GitHub Actions! The time is {datetime.datetime.utcnow()}")
