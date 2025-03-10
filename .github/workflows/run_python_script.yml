@@ -1,0 +1,17 @@
+name: Run Python Script
+
+jobs:
+  run_script:
+  runs-on: ubuntu-latest
+
+  steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+    - name: Set up python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Execute script
+      run: python3 example.py
